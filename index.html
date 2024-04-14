@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio </title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <!--<img src="images/logo.png" class="logo">-->
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Links</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Welcome!</p>
+            <h1>Hi, I'm <span>V S Vivek Tripurari</span></h1>
+            <h3>Banaglore</h3>
+            <a href="C:\Users\Vivek\Downloads\resume\vivek_resume.pdf" download class="btn btn2">Download CV</a>
+        </div>
+    </div>
+</div>
+<!-- -----------about---------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nulla nibh, tincidunt sit amet sapien quis, elementum molestie tellus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Mauris eleifend magna id ante convallis mattis. Quisque in sem tristique, dictum sapien et, accumsan libero.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active tab" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+
+
+                <div class="tab-contents active tab" id="experience">
+                    <ul>
+                        <li><span>Dec '23 - Jan '23</span><br>Machine Learning Intern at Suvidha Foundation</li>
+                        <li><span>Nov '23' - Dec '23</span><br>C Developer Intern at BharatTech</li>
+                        <li><span>Mar '23' - Apr '23</span><br>Marketing Research Intern at MyCaptain</li>
+                        
+                    </ul>
+                </div>
+                <div class="tab-contents " id="skills">
+                    <ul>
+                        <li><span>Programming Languages</span><br>Python (proficient), C/C++ (intermediate), Java (moderate)</li>
+                        <li><span>Core</span><br>Data structures in C++, Operating systems, Database Management</li>
+                        <li><span>Machine learning</span><br>Pytorch, Sci-kit, Numpy, Pandas, Tensorflow</li>
+                        <li><span>Web Development</span><br>HTML, CSS, Javascript, React</li>
+                        <li><span>IOT</span><br>Arduino , ESP 32, Contiki Os</li>
+                        <li><span>Databases</span><br>SQL, HDFS, Hive, Hadoop, Cassandra</li>
+                        <li><span>Other Tools</span><br>Web-scraping and automation: Selenium, BS4, Scrapy </li>
+
+
+
+
+
+           
+                </div>
+                
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>Bachelors of Technology</span><br>CSE student at PES UNIVERSITY</li>
+                        <li><span>12th Grade</span><br>PSBB LLA</li>
+                        <li><span>10th Grade</span><br>PSBB LLA</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ---------my links---------------- -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Links</h1>
+        <div class="services-list">
+            <div class="service-item">
+                <a href="https://in.linkedin.com/in/vsvt" target="_blank">
+                    <img src="images/download.png" alt="LinkedIn Logo" class="logo-img">
+                    <h2>Linkedin</h2>
+                    <p>Connect with me here!</p>
+                </a>
+            </div>
+            <div>
+                <i class="fas fa-crop-alt"></i>
+                <h2>Github</h2>
+                <p>View My projects here!</p>
+                <a href="https://github.com/VivekT07">Github</a>
+            </div>
+            <div>
+                <i class="fab fa-app-store"></i>
+                <h2>Yet to do</h2>
+                <p></p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ----------portfolio------------ -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png">
+                <div class="layer">
+                    <h3>Social Media App</h3>
+                    <p>The app connects you yo the talented people around the world. Download it from play store.</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.png">
+                <div class="layer">
+                    <h3>Music App</h3>
+                    <p>The app connects you yo the talented people around the world. Download it from play store.</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.png">
+                <div class="layer">
+                    <h3>Online Shopping App</h3>
+                    <p>The app connects you yo the talented people around the world. Download it from play store.</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+<!-- ----------contact------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fas fa-paper-plane"></i> vivek.official@gmail.com</p>
+                <!--<p><i class="fas fa-phone-square-alt"></i> 0123456789</p>-->
+                <div class="social-icons">
+                    <a href="https://facebook.com/"><i class="fab fa-facebook"></i></a>
+                    <a href=""><i class="fab fa-twitter-square"></i></a>
+                    <a href=""><i class="fab fa-instagram"></i></a>
+                    <a href=""><i class="fab fa-linkedin"></i></a>
+                </div>
+                
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    
+</div>
+
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+
+    var sidemeu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+    function closemenu(){
+        sidemeu.style.right = "-200px";
+    }
+
+</script>
+<script>
+    const scriptURL = "https://script.google.com/macros/s/AKfycbw7SxxRL-uvoBja8LzSADKGISEpleiKH3P3JKs8kZ5igNiH5ZY9pRMMCys7EwqUkq3C/exec" // add your own app script link here
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            console.log('Form submitted successfully');
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
