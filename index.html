@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="V S Vivek Tripurari's personal website showcasing his projects, skills, and experiences in computer science and technology.">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Portfolio </title>
+    <title>v s vivek tripurari </title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
 </head>
@@ -26,8 +28,9 @@
         <div class="header-text">
             <p>Welcome!</p>
             <h1>Hi, I'm <span>V S Vivek Tripurari</span></h1>
-            <h3>Banaglore</h3>
+            <h3>Bengaluru</h3>
             <a href="C:\Users\Vivek\Downloads\resume\vivek_resume.pdf" download class="btn btn2">Download CV</a>
+            <h5>CGPA : 8.03</h5h5>
         </div>
     </div>
 </div>
@@ -40,7 +43,9 @@
             </div>
             <div class="about-col-2">
                 <h1 class="sub-title">About Me</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nulla nibh, tincidunt sit amet sapien quis, elementum molestie tellus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Mauris eleifend magna id ante convallis mattis. Quisque in sem tristique, dictum sapien et, accumsan libero.</p>
+                <p>Hello, I'm V S Vivek T, a 3rd year Computer Science student at PES University. Proficient in Python, C++, and Java, and I am well-versed in Machine Learning concepts, utilizing frameworks such as PyTorch, Sci-kit, and TensorFlow. My technical expertise extends to crafting engaging websites with HTML, CSS, and JavaScript, managing databases, and exploring IoT with Arduino and ESP 32.
+
+                    Beyond my technical pursuits, I enjoy playing football, discovering new destinations, and watching the latest films. I am passionate about technology and eager to engage in collaborative innovation.</p>
 
                 <div class="tab-titles">
                     <p class="tab-links active tab" onclick="opentab('experience')">Experience</p>
@@ -142,7 +147,7 @@
                 </div>
             </div>
         </div>
-        <a href="#" class="btn">See more</a>
+        <a href="#" class="btn">Scroll Up</a>
     </div>
 </div>
 <!-- ----------contact------------- -->
@@ -151,7 +156,7 @@
         <div class="row">
             <div class="contact-left">
                 <h1 class="sub-title">Contact Me</h1>
-                <p><i class="fas fa-paper-plane"></i> vivek.official@gmail.com</p>
+                <!--<p><i class="fas fa-paper-plane"></i> vivek.official@gmail.com</p>-->
                 <!--<p><i class="fas fa-phone-square-alt"></i> 0123456789</p>-->
                 <div class="social-icons">
                     <a href="https://facebook.com/"><i class="fab fa-facebook"></i></a>
@@ -225,6 +230,21 @@
         })
         .catch(error => console.error('Error!', error.message))
     })
-  </script>
+</script>
+
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        // Simulate a click on the 'Experience' tab
+        document.querySelector(".tab-links.active").classList.remove("active");
+        document.querySelector(".tab-contents.active").classList.remove("active-tab");
+        var experienceTabLink = document.querySelector(".tab-links:nth-child(1)");
+        var experienceTabContent = document.getElementById("experience");
+        experienceTabLink.classList.add("active");
+        experienceTabContent.classList.add("active-tab");
+    });
+
+</script>
+
 </body>
 </html>
